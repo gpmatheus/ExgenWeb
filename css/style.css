@@ -1,0 +1,72 @@
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    border: none;
+    border-radius: 60px;
+    padding: 15px;
+    margin: 10px 10px;
+    background-color: rgb(127, 255, 212);
+    transition: all 1500ms ease 0s;
+}
+
+.next:hover {
+    background: rgba(127, 255, 212, .4);
+}
+
+#header {
+    background: linear-gradient(to bottom, rgb(255, 228, 196), rgba(255, 228, 196, .6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+#generate-button {
+    background-color: white;
+    margin: 60px;
+}
+
+#generate-button:hover {
+    padding: 20px;
+}
+
+#expressions-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.expression {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    align-items: center;
+    margin-right: 20%;
+}
+
+.expression > p {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(127, 255, 212, .2);
+    border-radius: 5px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.expression > input {
+    resize: none;
+    border: 5px solid rgba(127, 255, 212, .2);
+    border-radius: 10px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    line-height: 20px;
+    white-space: nowrap;
+    padding: 5px;
+    width: 200px;
+}
