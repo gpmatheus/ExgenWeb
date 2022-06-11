@@ -24,9 +24,14 @@ button:hover, input[type='button']:hover {
     background: rgba(127, 255, 212, .4);
 }
 
-button:disabled, input[type='button']:disabled {
+button:disabled{
     background: rgba(128, 128, 128, .5);
     color: gray;
+}
+
+input[type='button']:disabled {
+    background: rgba(128, 128, 128, .0);
+    color: rgba(128, 128, 128, .0);
 }
 
 form {
@@ -75,9 +80,9 @@ form > input[type='number'] {
 }
 
 .correct-answer-field {
-    background-color: green;
+    background-color: rgb(127, 197, 127);
 }
 
 .wrong-answer-field {
-    background-color: red;
+    background-color: rgb(223, 96, 96);
 }

@@ -33,6 +33,7 @@ function checkAnswer(answerEl) {
     }
 
     answerEl['check'].disabled = true;
+    answerEl['check'].style.visibility = 'hidden';
     answerEl['answer'].disabled = true;
     generate();
 }
