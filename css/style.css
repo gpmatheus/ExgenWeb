@@ -1,4 +1,14 @@
-button {
+#header {
+    background: linear-gradient(to bottom, rgb(255, 228, 196), rgba(255, 228, 196, .6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 30px;
+    transition: all 1500ms ease 0s;
+}
+
+button, input[type='button'] {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     color: black;
@@ -10,34 +20,16 @@ button {
     transition: all 1500ms ease 0s;
 }
 
-.next:hover {
+button:hover, input[type='button']:hover {
     background: rgba(127, 255, 212, .4);
 }
 
-#header {
-    background: linear-gradient(to bottom, rgb(255, 228, 196), rgba(255, 228, 196, .6));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    margin-bottom: 30px;
+button:disabled, input[type='button']:disabled {
+    background: rgba(128, 128, 128, .5);
+    color: gray;
 }
 
-#generate-button {
-    background-color: white;
-    margin: 60px;
-}
-
-#generate-button:hover {
-    padding: 20px;
-}
-
-#expressions-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.expression {
+form {
     display: flex;
     flex-flow: row nowrap;
     justify-content: right;
@@ -45,7 +37,12 @@ button {
     margin-right: 20%;
 }
 
-.expression > p {
+#expressions-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label[name='expression'], form > p {
     margin: 10px;
     padding: 10px;
     background-color: rgba(127, 255, 212, .2);
@@ -56,9 +53,14 @@ button {
     font-size: 30px;
 }
 
-.expression > input {
+form > input[type='button']:hover:enabled {
+    padding: 15px 20px;
+}
+
+form > input[type='number'] {
+    margin: 10px;
     resize: none;
-    border: 5px solid rgba(127, 255, 212, .2);
+    border: 5px solid rgba(127, 255, 212, .4);
     border-radius: 10px;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -69,4 +71,13 @@ button {
     white-space: nowrap;
     padding: 5px;
     width: 200px;
+    transition: all 500ms ease 0s;
+}
+
+.correct-answer-field {
+    background-color: green;
+}
+
+.wrong-answer-field {
+    background-color: red;
 }
