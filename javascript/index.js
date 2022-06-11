@@ -19,6 +19,9 @@ function checkAnswer(answerEl) {
     let question = answer.labels[0].innerText;
     let actualAnswer = expressions.get(question);
 
+    //debbugin porposes
+    console.log('question: ' + question + ', answer: ' + answerValue + ', actual answer: ' + actualAnswer);
+
     /**         ^
     tudo isso ( | ) poderia ser substituido por:
         let question = answerEl['answer'].id;
