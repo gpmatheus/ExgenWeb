@@ -69,7 +69,7 @@ class NumberElement {
         }
 
         else if (this._operation === '/') {
-            let multiply = Math.floor(Math.random() * 100);
+            let multiply = Math.floor(Math.random() * 99) + 1;
             let result = parseInt(this._value * multiply);
             this._left = new NumberElement(result);
             this._right = new NumberElement(multiply);
